@@ -7,7 +7,7 @@
         align-items: center;
     }
 
-    main > .container-main > .container-left > >.phone > #background-left {
+    main > .container-main > .container-left > > .phone > #background-left {
 
         right: 170px !important;
         top: -195px !important;
@@ -43,7 +43,7 @@
         margin: 70px auto 0 auto !important;
     }
 
-    main > .container-main > .container-right >#background-right{
+    main > .container-main > .container-right > #background-right {
 
         width: 288px !important;
         height: 500px !important;
@@ -51,15 +51,25 @@
         right: -115px !important;
         bottom: -115px !important;
     }
+
 }
 
-/******************** GENERAL ********************/
 
+/******************** GENERAL ********************/
 body {
 
     font-family: "Rubik", sans-serif;
     position: relative;
 }
+
+.attribution{
+
+        display: flex;
+        justify-content: center;
+
+    position: relative;
+    z-index: 3;
+    }
 
 main > .container-main {
 
@@ -98,8 +108,6 @@ main > .container-main > .container-left > .phone > #background-left {
 
 
 /******************** PHONE ********************/
-
-
 main > .container-main > .container-left {
 
     display: flex;
@@ -139,7 +147,6 @@ main > .container-main > .container-left > .phone > .phone-screen {
 
 
 /* --> HEADER */
-
 main > .container-main > .container-left > .phone > .phone-screen > .header {
 
     height: 67px;
@@ -252,7 +259,6 @@ main > .container-main > .container-left > .phone > .phone-screen > .header > .d
 
 
 /* --> CONTENT MESSAGES */
-
 main > .container-main > .container-left > .phone > .phone-screen > .content-message {
 
     height: 365px;
@@ -482,7 +488,6 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
 
 /* --> CHAT CONTAINER
 */
-
 main > .container-main > .container-left > .phone > .phone-screen > .chat-container > .chat-screen {
 
     display: flex;
@@ -539,7 +544,6 @@ main > .container-main > .container-left > .phone > .phone-screen > .chat-contai
 
 --> PARAGRAPH
 */
-
 main > .container-main > .container-right > .container-text {
 
     margin: 125px;
@@ -571,7 +575,6 @@ main > .container-main > .container-right > .container-text > .description {
 
 
 /******************** BACKGROUND RIGHT ********************/
-
 main > .container-main > .container-right > #background-right {
 
     position: absolute;
