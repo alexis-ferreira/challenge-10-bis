@@ -18,19 +18,24 @@ main > .container-main >div {
     width: 50%;
 }
 
-main > .container-main > #background-left {
+main > .container-main > .container-left{
+
+    position: relative;
+}
+
+main > .container-main > .container-left > #background-left {
 
     background: rgb(233,66,255);
     background: linear-gradient(210deg, rgb(213, 99, 255) 0%, rgba(136,56,255,1) 40%);
 
-    width: 420px;
+    width: 500px;
     height: 700px;
 
     border-bottom-left-radius: 400px;
     border-bottom-right-radius: 400px;
 
     position: absolute;
-    left: 0;
+    right: 190px;
     top: 0;
 
     z-index: 1;
@@ -63,7 +68,7 @@ main > .container-main > .container-left > .phone{
     justify-content: center;
     align-items: center;
 
-    box-shadow: 0 0 20px 20px #00000038
+    box-shadow: 10px 5px 20px 10px #0000001f;
 }
 
 main > .container-main > .container-left > .phone >.phone-screen{
@@ -82,10 +87,12 @@ main > .container-main > .container-left > .phone >.phone-screen > .header{
 
     height: 67px;
 
-    background: linear-gradient(260deg, rgb(213, 99, 255) 0%, rgba(136,56,255,1) 80%);
+    background: linear-gradient(260deg, rgb(213, 99, 255) 20%, rgba(136,56,255,1) 80%);
 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 
     position: relative;
 
@@ -185,46 +192,4 @@ main > .container-main > .container-left > .phone >.phone-screen > .header > .do
 main > .container-main > .container-left > .phone >.phone-screen > .header > .dots-menu > p{
 
     line-height: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 480px) {
-
-    /******************** GENERAL ********************/
-    body > .container-main {
-
-        position: relative;
-    }
-
-    main > .container-main > #background-left {
-
-        background: rgb(233, 66, 255);
-        background: linear-gradient(180deg, rgba(136, 56, 255, 1) 100%, rgba(136, 56, 255, 1) 100%);
-
-        width: 50%;
-        height: 500px;
-
-        border-bottom-left-radius: 400px;
-        border-bottom-right-radius: 400px;
-
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-
-
-    /******************** CONTAINER ********************/
-    /******************** PHONE ********************/
-
-
 }
