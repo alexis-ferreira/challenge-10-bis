@@ -1,3 +1,58 @@
+@media screen AND (max-width: 450px) {
+
+    main > .container-main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > .container-main > .container-left > >.phone > #background-left {
+
+        right: 170px !important;
+        top: -195px !important;
+    }
+
+    main > .container-main > .container-left {
+
+        padding-top: 65px;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    main > .container-main > .container-left > .phone {
+
+        width: 248px;
+    }
+
+    main > .container-main > .container-right {
+
+        width: 100%;
+    }
+
+    main > .container-main > .container-right > .container-text {
+
+        text-align: center;
+
+        width: 90%;
+
+        margin: 70px auto 0 auto !important;
+    }
+
+    main > .container-main > .container-right >#background-right{
+
+        width: 288px !important;
+        height: 500px !important;
+
+        right: -115px !important;
+        bottom: -115px !important;
+    }
+}
+
 /******************** GENERAL ********************/
 
 body {
@@ -23,7 +78,7 @@ main > .container-main > .container-left {
     position: relative;
 }
 
-main > .container-main > .container-left > #background-left {
+main > .container-main > .container-left > .phone > #background-left {
 
     background: rgb(233, 66, 255);
     background: linear-gradient(210deg, rgb(213, 99, 255) 0%, rgba(136, 56, 255, 1) 40%);
@@ -36,9 +91,9 @@ main > .container-main > .container-left > #background-left {
 
     position: absolute;
     right: 190px;
-    top: 0;
+    top: -150px;
 
-    z-index: 1;
+    z-index: -1;
 }
 
 
@@ -61,13 +116,13 @@ main > .container-main > .container-left > .phone {
 
     background-color: white;
 
-    z-index: 2;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
     box-shadow: 10px 5px 20px 10px #0000001f;
+
+    position: relative;
 }
 
 main > .container-main > .container-left > .phone > .phone-screen {
@@ -203,7 +258,7 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
     height: 365px;
 }
 
-main > .container-main > .container-left > .phone > .phone-screen > .content-message > .text-left-container >#text-left-margin{
+main > .container-main > .container-left > .phone > .phone-screen > .content-message > .text-left-container > #text-left-margin {
 
     width: 130px;
     height: 33px;
@@ -342,7 +397,7 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
 
     border-radius: 10px 10px 4px 10px;
 
-    box-shadow: 4px 4px 20px 0px #0000001f;
+    box-shadow: 4px 4px 20px 0 #0000001f;
 
 }
 
@@ -359,10 +414,10 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
 
     border-radius: 10px 10px 4px 10px;
 
-    box-shadow: 4px 4px 20px 0px #0000001f;
+    box-shadow: 4px 4px 20px 0 #0000001f;
 }
 
-main > .container-main > .container-left > .phone > .phone-screen > .content-message > .price-service-container{
+main > .container-main > .container-left > .phone > .phone-screen > .content-message > .price-service-container {
 
     display: flex;
     justify-content: space-between;
@@ -416,7 +471,7 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
     align-items: center;
 }
 
-main > .container-main > .container-left > .phone > .phone-screen > .content-message > .price-service-container > .price-service > .price{
+main > .container-main > .container-left > .phone > .phone-screen > .content-message > .price-service-container > .price-service > .price {
 
     color: white;
 
@@ -425,14 +480,10 @@ main > .container-main > .container-left > .phone > .phone-screen > .content-mes
 }
 
 
-
-
-
-
 /* --> CHAT CONTAINER
 */
 
-main > .container-main > .container-left > .phone > .phone-screen > .chat-container >.chat-screen {
+main > .container-main > .container-left > .phone > .phone-screen > .chat-container > .chat-screen {
 
     display: flex;
     justify-content: space-between;
@@ -452,14 +503,14 @@ main > .container-main > .container-left > .phone > .phone-screen > .chat-contai
     border-radius: 30px;
 }
 
-main > .container-main > .container-left > .phone > .phone-screen > .chat-container >.chat-screen >.placeholder{
+main > .container-main > .container-left > .phone > .phone-screen > .chat-container > .chat-screen > .placeholder {
 
     padding-bottom: 12px;
 
     margin-left: 20px;
 }
 
-main > .container-main > .container-left > .phone > .phone-screen > .chat-container >.chat-screen > .btn-submit{
+main > .container-main > .container-left > .phone > .phone-screen > .chat-container > .chat-screen > .btn-submit {
 
     font-size: 10px;
     font-weight: 700;
@@ -484,9 +535,58 @@ main > .container-main > .container-left > .phone > .phone-screen > .chat-contai
 }
 
 
+/******************** RIGHT CONTAINER *******************
+
+--> PARAGRAPH
+*/
+
+main > .container-main > .container-right > .container-text {
+
+    margin: 125px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+main > .container-main > .container-right > .container-text > .title {
+
+    font-size: 35px;
+    font-weight: 500;
+
+    margin-bottom: 34px;
+
+    color: hsl(271, 36%, 24%);
+}
 
 
+main > .container-main > .container-right > .container-text > .description {
 
+    font-size: 15px;
+
+    color: hsl(270, 7%, 64%);
+
+    line-height: 28px;
+}
+
+
+/******************** BACKGROUND RIGHT ********************/
+
+main > .container-main > .container-right > #background-right {
+
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+
+    height: 680px;
+    width: 335px;
+
+    border-top-left-radius: 300px;
+
+    background-color: hsl(270, 20%, 96%);
+
+    z-index: 1;
+}
 
 
 
