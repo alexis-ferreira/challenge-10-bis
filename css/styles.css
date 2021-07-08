@@ -60,6 +60,8 @@ body {
 
     font-family: "Rubik", sans-serif;
     position: relative;
+
+    max-width: 1440px;
 }
 
 .attribution{
