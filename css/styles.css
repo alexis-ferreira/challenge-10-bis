@@ -50,7 +50,10 @@
 
         right: -115px !important;
         bottom: -115px !important;
+
+        display: block;
     }
+
 
     .attribution{
 
@@ -594,6 +597,11 @@ main > .container-main > .container-right > #background-right {
     background-color: hsl(270, 20%, 96%);
 
     z-index: 1;
+}
+
+main > .container-main > #background-right-responsive{
+
+    display: none;
 }
 
 
